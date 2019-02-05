@@ -60,8 +60,8 @@ Home
         <div class="fb-comments" data-href="{{ Request::url() }}" data-numposts="5"></div>
   <!-- [Faccebook comments]-->      
 
-<!-- [DISQUS COMMENTS]-->
 
+<!-- ***************************[DISQUS COMMENTS]-->
 <div id="disqus_thread"></div>
 <script>
 
@@ -85,8 +85,6 @@ s.setAttribute('data-timestamp', +new Date());
                             
 
 <!--End Disqus-->
-
-
 
   @endguest
     </div>

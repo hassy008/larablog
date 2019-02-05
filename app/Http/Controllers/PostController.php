@@ -39,23 +39,15 @@ class PostController extends Controller
     	$data['publication_status']=$request->publication_status;
 
 /*************[IMAGE UPLOAD]******************/
-	/* IT's working
+
     $files    = $request->file('blog_image');
 	$filename = $files->getClientOriginalName();
 	//$extension= $files->getClientOriginalExtension();
 	$picture  =date('His').$filename;
 	$image_url='public/post_image/'.$picture;
 	$destinationPath=base_path().'/public/post_image/';
-	$success        =$files->move($destinationPath, $picture);*/
+	$success        =$files->move($destinationPath, $picture);
 
-//test
-    $files    = $request->file('blog_image');
-    $filename = $files->getClientOriginalName();
-    $extension= $files->getClientOriginalExtension();
-    $picture  =date('His').$filename.$extension ;
-    $image_url='public/post_image/'.$picture;
-    $destinationPath=base_path().'/public/post_image/';
-    $success        =$files->move($destinationPath, $picture);
 
 	if ($success) {
     		$data['blog_image']=$image_url;

@@ -62,7 +62,7 @@ Add Post
         </div>
       </div>
 
-<div class="control-group">
+      <div class="control-group">
         <label class="control-label">Post Image</label>
         <div class="controls">
           <input type="file" class="span3" name="blog_image"> 

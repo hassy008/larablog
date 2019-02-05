@@ -46,52 +46,16 @@
                   </ul>
               </li>
 
-              <li class="sub-menu">
-                  <a href="javascript:;" class="">
-                      <i class="icon-tasks"></i>
-                      <span>Form Stuff</span>
-                      <span class="arrow"></span>
-                  </a>
-                  <ul class="sub">
-                      <li><a class="" href="form_layout.html">Form Layouts</a></li>
-                      <li><a class="" href="form_component.html">Form Components</a></li>
-                      <li><a class="" href="form_wizard.html">Form Wizard</a></li>
-                      <li><a class="" href="form_validation.html">Form Validation</a></li>
-                      <li><a class="" href="dropzone.html">Dropzone File Upload </a></li>
-                  </ul>
-              </li>
-              <li class="sub-menu">
-                  <a href="javascript:;" class="">
-                      <i class="icon-th"></i>
-                      <span>Data Tables</span>
-                      <span class="arrow"></span>
-                  </a>
-                  <ul class="sub">
-                      <li><a class="" href="basic_table.html">Basic Table</a></li>
-                      <li><a class="" href="dynamic_table.html">Dynamic Table</a></li>
-                      <li><a class="" href="editable_table.html">Editable Table</a></li>
-                  </ul>
-              </li>
-              <li class="sub-menu">
-                  <a href="javascript:;" class="">
-                      <i class="icon-fire"></i>
-                      <span>Icons</span>
-                      <span class="arrow"></span>
-                  </a>
-                  <ul class="sub">
-                      <li><a class="" href="font_awesome.html">Font Awesome</a></li>
-                      <li><a class="" href="glyphicons.html">Glyphicons</a></li>
-                  </ul>
-              </li>
+         
               <li class="sub-menu">
                   <a class="" href="javascript:;">
                       <i class="icon-trophy"></i>
-                      <span>Portlets</span>
+                      <span>Gallery</span>
                       <span class="arrow"></span>
                   </a>
                   <ul class="sub">
-                      <li><a href="general_portlet.html" class=""> General Portlet</a></li>
-                      <li><a href="draggable_portlet.html" class="">Draggable Portlet</a></li>
+                      <li><a href="{{ url('/add-gallery') }}" class=""> Add Gallery</a></li>
+                      <li><a href="{{ url('/manage-gallery') }}" class="">Manage Gallery</a></li>
                   </ul>
               </li>
               <li class="sub-menu">
@@ -105,21 +69,7 @@
                       <li><a href="google_map.html" class="">Google Map</a></li>
                   </ul>
               </li>
-              <li class="sub-menu">
-                  <a href="javascript:;" class="">
-                      <i class="icon-file-alt"></i>
-                      <span>Sample Pages</span>
-                      <span class="arrow"></span>
-                  </a>
-                  <ul class="sub">
-                      <li><a class="" href="blank.html">Blank Page</a></li>
-                      <li><a class="" href="blog.html">Blog</a></li>
-                      <li><a class="" href="timeline.html">Timeline</a></li>
-                      <li><a class="" href="profile.html">Profile</a></li>
-                      <li><a class="" href="about_us.html">About Us</a></li>
-                      <li><a class="" href="contact_us.html">Contact Us</a></li>
-                  </ul>
-              </li>
+              
               <li class="sub-menu">
                   <a href="javascript:;" class="">
                       <i class="icon-glass"></i>

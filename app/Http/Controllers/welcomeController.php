@@ -90,10 +90,10 @@ class welcomeController extends Controller
 
     public function categoryBlog($category_id){
         $published_post= DB::table('blog')
-                    ->where('publication_status',1)
-                    ->where('category_id', $category_id)
-                    ->orderBy('blog_id', 'desc')
-                    ->paginate(3);
+            ->where('publication_status',1)
+            ->where('category_id', $category_id)
+            ->orderBy('blog_id', 'desc')
+            ->paginate(3);
         $home=view('frontEnd.home.homeContent')
             ->with('published_post', $published_post);
 
@@ -103,7 +103,14 @@ class welcomeController extends Controller
 
    public function galleryPage()
    {
-     $gallery=view('frontEnd.gallery.gallery-content');
+    $gallery_images = DB::table('gallery')
+        ->where('publication_status', 1)
+        //->get();
+        ->paginate(9);
+
+     $gallery=view('frontEnd.gallery.gallery-content')
+          ->with('gallery_images', $gallery_images);
+
      return view('frontEnd.master')
             ->with('mainContent', $gallery);
    }

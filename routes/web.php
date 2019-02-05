@@ -53,6 +53,8 @@ Route::get('/social', 'socialController@addSocialMedia');
 Route::post('/save-social', 'socialController@saveSocialContact');
 
 
+Route::get('/add-gallery', 'GalleryController@addImage');
+Route::post('/save-images', 'GalleryController@saveImage');
 
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
